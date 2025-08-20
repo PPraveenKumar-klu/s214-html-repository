@@ -1,0 +1,136 @@
+https://t.me/+UAu3UPVBeipiNTI1
+
+<!-- FirstName  -text
+LastName - text
+Gender - radio button
+Password - password
+Confirm Password - password
+Date of Birth - date
+Address - textarea
+zipcode - number - 6 digit length
+State - text
+Languages known - C,C++,Java,Python,Javascript - checkbox
+
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-color:rgb(235, 255, 80);
+            margin: 100px;
+        }
+
+        table{
+            border : 1px solid red;
+            border-collapse: collapse;
+            background-color: rgb(0, 204, 255);
+        }
+
+        td{
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border: 2px solid black;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"]{
+            border-radius: 15px;
+        }
+
+        input[type="reset"]{
+            border-radius: 10px;
+            padding :20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <table border="1" >
+            <tr>
+                <td colspan="2" align="center" style="background-color: aqua;">Registration Form</td>
+                
+            </tr>
+            <tr>
+                <td>FirstName</td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <td>LastName:</td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="gender" id="gender">Male
+                    <input type="radio" name="gender" id="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="cpwd" id="cpwd"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" id="address" cols="80" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Zipcode :</td>
+                <td><input type="number" name="pin" id="pin" maxlength="6" minlength="6" style="border: 2px dotted red;"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" align="center" ><input style="background-color: red;" type="submit" value="Click to Register" >
+                <input type="reset" value="Clear">
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

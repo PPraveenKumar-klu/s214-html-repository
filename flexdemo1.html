@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo1</title>
+    <style>
+        .item{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1{
+            background-color: antiquewhite;
+            
+        }
+        .item2{
+            background-color: aqua;
+        }
+        .item3{
+            background-color: rgb(214, 152, 152);
+        }
+        .item4{
+            background-color: #ff00ff;
+        }
+        .item5{
+            background-color: greenyellow
+        }
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item item1">Item1</div>
+        <div class="item item2">Item2</div>
+        <div class="item item3">Item3</div>
+        <div class="item item4">Item4</div>
+        <div class="item item5">Item5</div>
+    </div>
+</body>
+</html>

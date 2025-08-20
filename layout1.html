@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout demo1</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .logo-div {
+        /* border: 1px solid gold; */
+        background-color: lightgrey;
+        padding: 10px;
+      }
+
+      .nav-div {
+        background-color: lightgray;
+        margin: 5px;
+        padding: 15px auto;
+        text-align: center;
+      }
+
+      .header-banner-div {
+        background-color: lightgray;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .bodyarea-container{
+        /* display: inline; */
+        display: flex;
+        margin: 10px;
+      }
+
+      .sidebar-div{
+        display: inline;
+        background-color: lightgrey;
+        padding : 100px;
+        width:25%;
+        min-height: 400px;
+        margin-right: 20px;
+
+      }
+
+      .bodyarea-div{
+        display: inline;
+        background-color: lightgrey;
+        padding : 100px;
+        width: 75%;
+      }
+      .footer{
+        background-color: lightgrey;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-div">
+      <img src="" alt="">
+
+    </div>
+    <div class="nav-div">Navigation</div>
+    <div class="header-banner-div">Header/Banner</div>
+
+    <div class="bodyarea-container">
+      <div class="sidebar-div">Side Bar</div>
+      <div class="bodyarea-div">Body Area</div>
+    </div>
+    <div class="footer">
+      Footer
+    </div>
+  </body>
+</html>

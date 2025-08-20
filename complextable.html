@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Layout</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td rowspan="1" colspan="1">A1</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2" colspan="1">A2</td>
+        <td rowspan="2" colspan="2">B1</td>
+        <td rowspan="2" colspan="1">C1</td>
+      </tr>
+
+      <tr>
+        <td rowspan="1" colspan="1">D1</td>
+        <td rowspan="2">E1</td>
+        <td rowspan="2" colspan="2">F1</td>
+      </tr>
+    </table>
+  </body>
+</html>
