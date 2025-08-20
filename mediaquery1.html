@@ -5,50 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --max-width: 1000px;
+            --gap: 1.6rem;
+            --page-padding: 1.6rem;
+        }
+
         html, body{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Courier New', Courier, monospace;
-            /* font-size: 62.5%; */
+            line-height: 1.4;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
         }
 
+        /* Container centers content and keeps a readable measure */
+        .container{
+            max-width: var(--max-width);
+            margin: 2rem auto;
+            padding: var(--page-padding);
+        }
+
+        /* Fluid, accessible heading sizes using clamp() */
         h1{
-            font-size: 4rem;
+            font-size: clamp(2rem, 3.6vw + 1rem, 4rem);
             background-color: aqua;
             color: brown;
+            margin: 0 0 var(--gap) 0;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
         }
+
         h2{
-            font-size: 2.5rem;
+            font-size: clamp(1.4rem, 2.2vw + 0.8rem, 2.5rem);
             background-color: gold;
             color: red;
+            margin: 0 0 var(--gap) 0;
+            padding: 0.45rem 0.8rem;
+            border-radius: 6px;
         }
+
         h3{
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 1.6vw + 0.6rem, 1.5rem);
             background-color: grey;
-            color: white
+            color: white;
+            margin: 0 0 var(--gap) 0;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
         }
 
-        @media (max-width : 500px){
-            h1{
-                font-size : 2rem;
-                background-color: darkgoldenrod;
-                color: wheat;
-            }
+        /* Small screens tweaks */
+        @media (max-width: 520px){
+            .container{ margin: 1rem; padding: 1rem; }
+            h1, h2, h3{ padding-left: 0.7rem; padding-right: 0.7rem; }
+        }
 
-            h2{
-                font-size : 1.2rem;
-                background-color: darkgoldenrod;
-                color: wheat;
-            }
+        /* Very large screens: add extra breathing room */
+        @media (min-width: 1400px){
+            .container{ padding: 2rem; }
         }
     </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+        <main class="container">
+            <h1>Lorem ipsum dolor sit amet.</h1>
 
-    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi!</h2>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi!</h2>
 
-    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus a blanditiis illum labore voluptatum! Qui quidem quam, architecto hic cumque voluptas assumenda sapiente nam eaque asperiores vero inventore voluptate. At!</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus a blanditiis illum labore voluptatum! Qui quidem quam, architecto hic cumque voluptas assumenda sapiente nam eaque asperiores vero inventore voluptate. At!</h3>
+        </main>
 </body>
 </html>
