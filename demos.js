@@ -1,0 +1,102 @@
+console.log("Hello");
+
+
+// Data Types in Javascript
+
+// Primitive Data Types in JS
+// let name = "praveen";
+
+// name = 1000;
+// console.log(name);
+// document.writeln(name+" Type is :"+typeof name+"<br>");
+
+// name = 12345.6789;
+// document.writeln(name+" Type is :"+typeof name+"<br>");
+
+// name = true;
+// document.writeln(name+" Type is : "+typeof name+"<br>");
+
+// name = undefined;
+// document.writeln(name+" Type is : "+typeof name+"<br>");
+
+// // let symbol = Symbol("unique");
+// // document.writeln(symbol);
+
+// name = null;
+// document.writeln(name+" Type is : "+typeof name+"<br>");
+
+
+// name = 12345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900112233448754889545685698598590689860589089348234892308943289034908348934890439803498034988943908349804389034123456789001122334487548895456856985985906898605890893482348923089432890349083489348904398034980349889439083498043890341234567890011223344875488954568569859859068986058908934823489230894328903490834893489043980349803498894390834980438903412345678900n;
+
+// document.writeln(name+" Type is : "+typeof name+"<br>");
+
+
+
+// Reference Types in JS
+// let colors = ['red', "green", "blue", 1];
+// document.writeln(colors+" Type is : "+typeof colors+"<br>");
+
+// document.writeln(colors[0]+" Type is : "+typeof colors[0]+"<br>");
+// document.writeln(colors[1]+" Type is : "+typeof colors[1]+"<br>");
+// document.writeln(colors[2]+" Type is : "+typeof colors[2]+"<br>");
+// document.writeln(colors[3]+" Type is : "+typeof colors[3]+"<br>");
+
+
+// let person =  { 
+//     'name': 'Praveen', 
+//     'age': 30, 
+//     'isMarried': true, 
+//     'address': { 
+//         'city': 'Visakhapatnam', 
+//         'state': 'AP' 
+//     } 
+// };
+
+
+// document.writeln(person.name+" Type is : "+typeof person.name+"<br>");
+// document.writeln(person.age+" Type is : "+typeof person.age+"<br>");
+
+// document.writeln(person.address.city)
+// document.writeln(person.address.state+"<br>");
+
+
+// let person2 =  { 
+//     'name': 'Kiran', 
+//     'age': 30, 
+//     'isMarried': true, 
+//     'address': { 
+//         'city': 'Bangalore', 
+//         'state': 'Karnataka' 
+//     } 
+// };
+// document.writeln("---------------------------<br>");
+// document.writeln("Person 2 details<br> ");
+// document.writeln("---------------------------<br>");
+// document.writeln(person2.name+" Type is : "+typeof person2.name+"<br>");
+// document.writeln(person2.age+" Type is : "+typeof person2.age+"<br>");
+
+// document.writeln(person2.address.city)
+// document.writeln(person2.address.state+"<br>");
+
+
+// document.writeln("---------------------------<br>");
+// document.writeln("Person 1 details<br> ");
+// document.writeln("---------------------------<br>");
+// document.writeln(person['name']+" Type is : "+typeof person.name+"<br>");
+// document.writeln(person['age']+" Type is : "+typeof person.age+"<br>");
+
+// document.writeln(person.address.city)
+// document.writeln(person.address.state)
+
+
+
+// functions in javascript
+
+
+function displayDetails(name)
+{
+    document.writeln(name);
+}
+
+displayDetails("Praveen");
+
