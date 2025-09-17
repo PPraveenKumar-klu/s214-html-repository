@@ -6,32 +6,24 @@ function ListComponent() {
 
   //   cars = [];
 
+  const handleClick = (e) => {
+    alert("Clicked " + e.target.name + " " + e.target.innerText);
+  };
+
   return (
     <>
-      {/* static content */}
-      {/* <h2>List</h2>
-      <ul className="list-group">
-        <li
-          className="list-group-item"
-          style={{ color: "#a0b000", backgroundColor: "black" }}
-        >
-          Item 1
-        </li>
-        <li className="mystyles">Item 2</li>
-        <li className="list-group-item">Item 3</li>
-      </ul> */}
-
       <h2>Dynamic List</h2>
 
       {cars.length === 0 ? (
         <h2>No cars available</h2>
       ) : (
         <ul className="list-group">
-          {cars.map((car, index) => (
+          {cars.map((car) => (
             <li
-              key={index}
+              key={car}
               className="list-group-item"
-              onClick={() => alert(car + "      " + index)}
+              // onClick={() => alert(car + "      " + index)}
+              onClick={handleClick()}
             >
               {car}
             </li>
